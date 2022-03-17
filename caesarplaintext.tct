@@ -1,0 +1,96 @@
+Enchiper by a key
+
+Get the key: amount we should shaffle the input
+get the input plaintext from user
+enchiper
+get the output chiphered texr
+
+Cuidados especiais
+
+Letras Y e Z --> precisam se tornar A e B;
+
+-uso de um command line argument! que funcionará como a key.
+
+-Lower cases e Upper cases precisam ser mantidas
+
+-Outros caracteres (pontuações, espaços, numeros) precisam ser mantidos e nao convertidos. 
+
+
+
+int main (int argc, string argv[])
+
+argc = numero de argumentos
+argv = é um array of characters that represents each of those comand line characters
+
+exemplo: ./caesar 3
+argc = 2 (./caesar, 3)
+argv[1] = key (lembrando que aqui ela é uma string)
+
+-a key só pode ter um digito
+-a key tem que ser um número inteiro
+-convert argument to an integer
+
+no caso de ter mais de um argumento (./caesar 2 8), é preciso lembrar o usuário: 
+Usage: ./caesar key
+
+neste caso se a key passar ela é:
+
+str 3 que precisa ser convertida para int 3
+
+converter usando a função atoi (stdlib.h)
+
+funções: islower isupper islpha
+
+for com if embutido? 
+if isalpha(argv[1])
+	{
+		int key;
+		key = atoi(argv[1]);
+		
+	}
+uso da tabela ascii
+
+por exemplo para conversão
+
+string userInput, encrypted;
+
+
+
+int x;
+if (userInput < 'y' && isalpha(userInput[i]) == false; && (userInput[i] != 'Y' || userInput [i] != 'Z'))
+{	
+	encrypted[i] = userInput[i] + key;
+}
+
+else if (userInput[i] = 'y' || userInput[i] = 'Y')
+{
+	if (islower(userInput[i]) == true;
+	{
+		 x = 'a';
+	}	 
+	else
+	{
+		x = 'A';
+	}
+	encrypted[i] = x + key;
+	
+}
+
+else if (userInput[i] =  'z' || userInput[i] = 'Z')
+{
+	if (islower(userInput[i]) == true;
+	{
+		 x = 'b';
+	}	 
+	else
+	{
+		x = 'B';
+	}
+	encrypted[i] = x + key;
+
+else if (isalpha(userInput[i]) == true);
+{
+	encrypted[i] = userInput[i] 
+}
+
+
